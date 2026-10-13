@@ -1,0 +1,22 @@
+Week 7 change review
+
+Scope: final code/configuration diff against main and the captured runtime evidence.
+Review performed with Codex assistance for this single-maintainer repository.
+This is not an independent reviewer approval.
+
+Findings:
+- No blocking findings in the reviewed changes.
+- The starter application behavior is preserved; source changes are formatting/import cleanup.
+- Runtime dependencies retain the supplied versions. Development tools are locked separately.
+- CI uses Python 3.13, a pinned uv release, the module-based pytest invocation, and the documented checks.
+- Compose defines exactly web, db, and adminer; both depend on healthy db.
+- PostgreSQL 17 uses the correct named-volume mount. Credentials are required from the ignored .env.
+- Browser ports bind to loopback; PostgreSQL has no published host port.
+- The Docker build succeeded and the actual browser/SQL evidence verifies creation, update, persistence, and reset.
+- All evidence links resolve. The development password is absent from the evidence text and tracked configuration.
+- Screenshot 7 and all six reflection questions match the assignment directions.
+- Terminal evidence is explicitly identified as saved output and browser-rendered transcript captures.
+- The six reflection answers intentionally remain for the student.
+
+Known limitation: the supplied Streamlit app emits a use_container_width deprecation warning.
+The captured browser operations succeeded; no application behavior changes were needed for this assignment.

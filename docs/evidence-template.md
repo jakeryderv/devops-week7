@@ -8,6 +8,8 @@ Issue: [Complete Week 7 Compose stack and evidence #1](https://github.com/jakery
 
 Branch: `feat/week7-compose`
 
+Pull request: [Complete Week 7 Compose application and evidence #2](https://github.com/jakeryderv/devops-week7/pull/2)
+
 Evidence collected: October 13, 2026. Command transcripts include UTC timestamps,
 the actual commands, their output, and exit codes. Browser screenshots come from
 the running local application, Adminer, or GitHub. Evidence 2 and 6 use the
@@ -124,8 +126,22 @@ confirmed that the recreated `requests` table contained zero rows.
 
 ## Screenshot 8 – Final GitHub pull request with passing CI
 
-The PR screenshot and passing CI details will be recorded here after the
-pull request checks complete.
+![GitHub pull request with repository, branch, and passing CI visible](evidence/08-github-pr-ci.png)
+
+Pull request #2 shows the `jakeryderv/devops-week7` repository, the
+`feat/week7-compose` branch targeting `main`, and "All checks have passed" for
+`CI / test (pull_request)`. The captured run passed lint, formatting, types,
+both SQLite tests, runtime export consistency, and Compose configuration
+validation.
+
+- [Passing GitHub Actions run](https://github.com/jakeryderv/devops-week7/actions/runs/38435129823)
+- [Recorded gh pr checks output](evidence/08-ci-before-evidence.txt)
+- [Change review notes](evidence/08-review.txt)
+
+The image captures successful checks for commit `b756193`. Adding the image and
+this final report creates another commit and triggers another CI run; the live
+[pull request](https://github.com/jakeryderv/devops-week7/pull/2) records the latest
+checks, review, and merge status.
 
 ## Reflection
 
