@@ -1,0 +1,5 @@
+Persistence verified: PostgreSQL records (including IDs, statuses, and creation timestamps) are identical after down/up.
+All three container IDs changed:
+adminer: eed036a38ab6 -> b481a6fefa00
+db: efa8adee5583 -> c0c4faa94cfa
+web: d3158d45ddaa -> a43b9791fdc0

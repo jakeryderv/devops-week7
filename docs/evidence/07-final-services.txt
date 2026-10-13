@@ -1,0 +1,10 @@
+UTC: 2026-10-13T16:57:37.765317+00:00
+Working directory: /home/jake/school/devops/week7
+$ docker compose ps
+
+NAME              IMAGE         COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+week7-adminer-1   adminer:5     "entrypoint.sh docke…"   adminer   59 seconds ago   Up 53 seconds             127.0.0.1:8080->8080/tcp
+week7-db-1        postgres:17   "docker-entrypoint.s…"   db        59 seconds ago   Up 58 seconds (healthy)   5432/tcp
+week7-web-1       week7-web     "streamlit run app/m…"   web       59 seconds ago   Up 53 seconds             127.0.0.1:8501->8501/tcp
+
+Exit code: 0

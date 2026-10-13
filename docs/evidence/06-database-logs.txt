@@ -1,0 +1,15 @@
+UTC: 2026-10-13T16:56:13.612974+00:00
+Working directory: /home/jake/school/devops/week7
+$ docker compose logs db
+
+db-1  | 
+db-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db-1  | 
+db-1  | 2026-10-13 16:55:37.501 UTC [1] LOG:  starting PostgreSQL 17.11 (Debian 17.11-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+db-1  | 2026-10-13 16:55:37.501 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db-1  | 2026-10-13 16:55:37.501 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db-1  | 2026-10-13 16:55:37.503 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db-1  | 2026-10-13 16:55:37.507 UTC [28] LOG:  database system was shut down at 2026-10-13 16:55:36 UTC
+db-1  | 2026-10-13 16:55:37.510 UTC [1] LOG:  database system is ready to accept connections
+
+Exit code: 0
