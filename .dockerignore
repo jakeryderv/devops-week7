@@ -3,6 +3,11 @@
 .venv
 __pycache__
 .pytest_cache
+.ruff_cache
+.playwright-cli
+.agents
+.codex
+.aws
 .env
 *.db
 docs

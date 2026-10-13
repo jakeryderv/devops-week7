@@ -1,5 +1,11 @@
 import streamlit as st
-from db import get_engine, initialize_database, create_request, list_requests, update_status
+from db import (
+    create_request,
+    get_engine,
+    initialize_database,
+    list_requests,
+    update_status,
+)
 
 st.set_page_config(page_title="Service Request Tracker", page_icon="🛠️", layout="wide")
 st.title("🛠️ Service Request Tracker")
@@ -11,12 +17,16 @@ initialize_database(engine)
 with st.sidebar:
     st.header("Create Request")
     title = st.text_input("Title")
-    category = st.selectbox("Category", ["Hardware", "Software", "Network", "Access", "Other"])
+    category = st.selectbox(
+        "Category", ["Hardware", "Software", "Network", "Access", "Other"]
+    )
     priority = st.selectbox("Priority", ["Low", "Medium", "High", "Critical"], index=1)
     description = st.text_area("Description")
     if st.button("Submit Request", type="primary"):
         if title.strip() and description.strip():
-            create_request(engine, title.strip(), category, priority, description.strip())
+            create_request(
+                engine, title.strip(), category, priority, description.strip()
+            )
             st.success("Request created")
             st.rerun()
         else:
@@ -47,4 +57,6 @@ else:
         st.rerun()
 
 st.divider()
-st.caption("Tip: In Docker Compose, this app should connect to the database service name `db`, not `localhost`.")
+st.caption(
+    "Tip: In Docker Compose, this app should connect to the database service name `db`, not `localhost`."
+)
