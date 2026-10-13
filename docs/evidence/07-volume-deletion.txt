@@ -1,0 +1,22 @@
+UTC: 2026-10-13T16:56:38.571236+00:00
+Working directory: /home/jake/school/devops/week7
+$ docker compose down -v
+
+ Container week7-web-1 Stopping 
+ Container week7-adminer-1 Stopping 
+ Container week7-adminer-1 Stopped 
+ Container week7-adminer-1 Removing 
+ Container week7-adminer-1 Removed 
+ Container week7-web-1 Stopped 
+ Container week7-web-1 Removing 
+ Container week7-web-1 Removed 
+ Container week7-db-1 Stopping 
+ Container week7-db-1 Stopped 
+ Container week7-db-1 Removing 
+ Container week7-db-1 Removed 
+ Network week7_default Removing 
+ Volume week7_postgres_data Removing 
+ Volume week7_postgres_data Removed 
+ Network week7_default Removed 
+
+Exit code: 0

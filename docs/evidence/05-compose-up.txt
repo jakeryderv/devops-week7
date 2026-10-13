@@ -1,0 +1,26 @@
+UTC: 2026-10-13T16:55:43.193796+00:00
+Working directory: /home/jake/school/devops/week7
+$ docker compose up -d
+
+ Network week7_default Creating 
+ Network week7_default Creating 
+ Network week7_default Created 
+ Network week7_default Created 
+ Container week7-db-1 Creating 
+ Container week7-db-1 Created 
+ Container week7-adminer-1 Creating 
+ Container week7-web-1 Creating 
+ Container week7-web-1 Created 
+ Container week7-adminer-1 Created 
+ Container week7-db-1 Starting 
+ Container week7-db-1 Started 
+ Container week7-db-1 Waiting 
+ Container week7-db-1 Waiting 
+ Container week7-db-1 Healthy 
+ Container week7-web-1 Starting 
+ Container week7-db-1 Healthy 
+ Container week7-adminer-1 Starting 
+ Container week7-web-1 Started 
+ Container week7-adminer-1 Started 
+
+Exit code: 0

@@ -1,0 +1,12 @@
+UTC: 2026-10-13T16:54:56.422839+00:00
+Working directory: /home/jake/school/devops/week7
+$ docker compose exec -T db psql -U student -d helpdesk -c 'SELECT id, title, category, priority, status, created_at FROM requests ORDER BY id;'
+
+ id |           title           | category | priority |   status    |         created_at         
+----+---------------------------+----------+----------+-------------+----------------------------
+  1 | Projector has no image    | Hardware | Medium   | Open        | 2026-10-13 16:53:25.620733
+  2 | Library Wi-Fi disconnects | Network  | High     | In Progress | 2026-10-13 16:53:26.749795
+(2 rows)
+
+
+Exit code: 0

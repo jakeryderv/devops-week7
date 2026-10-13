@@ -1,0 +1,19 @@
+UTC: 2026-10-13T16:56:13.549327+00:00
+Working directory: /home/jake/school/devops/week7
+$ docker compose logs web
+
+web-1  | 
+web-1  | Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+web-1  | 
+web-1  | 
+web-1  |   You can now view your Streamlit app in your browser.
+web-1  | 
+web-1  |   URL: http://0.0.0.0:8501
+web-1  | 
+web-1  | 2026-10-13 16:55:53.958 Please replace `use_container_width` with `width`.
+web-1  | 
+web-1  | `use_container_width` will be removed after 2025-12-31.
+web-1  | 
+web-1  | For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+
+Exit code: 0

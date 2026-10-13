@@ -1,0 +1,11 @@
+UTC: 2026-10-13T16:57:37.698420+00:00
+Working directory: /home/jake/school/devops/week7
+$ docker compose exec -T db psql -U student -d helpdesk -c 'SELECT count(*) AS requests_after_volume_deletion FROM requests;'
+
+ requests_after_volume_deletion 
+--------------------------------
+                              0
+(1 row)
+
+
+Exit code: 0
